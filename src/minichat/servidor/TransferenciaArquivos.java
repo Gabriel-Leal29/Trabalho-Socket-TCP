@@ -15,10 +15,6 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Locale;
 
-/**
- * Canal de arquivo: uma conexão TCP separada para cada upload ou download, para que o canal
- * de chat nunca carregue bytes de arquivo e continue livre durante transferências longas.
- */
 class TransferenciaArquivos {
 
     private final ServidorChat servidor;

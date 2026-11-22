@@ -9,11 +9,6 @@ import java.util.UUID;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
-/**
- * Um cliente logado no chat. Tudo o que o servidor manda para ele passa por uma fila,
- * esvaziada por uma thread só dele. Assim o broadcast só coloca a mensagem nas filas e
- * nunca espera um cliente lento.
- */
 public class ClienteConectado {
 
     // Folga para rajadas; só um cliente que parou de ler chega aqui, e aí é desconectado

@@ -20,12 +20,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-/**
- * Aceita as conexões e guarda quem está no chat.
- * Entradas, saídas e broadcasts acontecem dentro de métodos synchronized: assim, se duas
- * pessoas entram ao mesmo tempo, todos recebem as listas USERS na mesma ordem e a última
- * que chega é sempre a mais nova.
- */
 public class ServidorChat {
 
     private static final DateTimeFormatter DATA_HORA = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");

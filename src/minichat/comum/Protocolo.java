@@ -7,8 +7,6 @@ import java.io.OutputStream;
 import java.util.function.LongConsumer;
 
 public final class Protocolo {
-
-    // A 5000 é usada pelo AirPlay no macOS.
     public static final int PORTA_PADRAO = 5050;
 
     // 64 KB: poucas chamadas de sistema por arquivo, mas ainda atualiza a barra de progresso
@@ -53,7 +51,6 @@ public final class Protocolo {
         return new Mensagem(ERROR, String.valueOf(codigo), texto);
     }
 
-    /** Copia exatamente "tamanho" bytes, um bloco por vez, avisando o progresso a cada bloco. */
     public static void copiarEmBlocos(InputStream origem, OutputStream destino, long tamanho,
                                       LongConsumer progresso) throws IOException {
         byte[] buffer = new byte[TAMANHO_BUFFER];

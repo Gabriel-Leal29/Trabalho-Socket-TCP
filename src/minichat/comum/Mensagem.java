@@ -6,12 +6,6 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * Uma mensagem do protocolo: o comando seguido dos campos, todos em texto.
- * No fio: writeUTF(comando), writeInt(quantidade de campos) e writeUTF de cada campo.
- * O writeUTF põe 2 bytes de tamanho antes do texto, então o receptor sabe onde cada
- * campo termina mesmo o TCP sendo um fluxo contínuo de bytes.
- */
 public final class Mensagem {
 
     private static final int MAX_CAMPOS = 100_000;

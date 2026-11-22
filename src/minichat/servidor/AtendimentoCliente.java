@@ -13,10 +13,6 @@ import java.net.Socket;
 import java.net.SocketTimeoutException;
 import java.util.regex.Pattern;
 
-/**
- * Thread de uma conexão. O primeiro comando diz o que ela é: LOGIN abre o canal de chat;
- * UPLOAD ou DOWNLOAD abrem um canal só para aquele arquivo.
- */
 public class AtendimentoCliente extends Thread {
 
     private static final Pattern NICK_VALIDO = Pattern.compile("[\\p{L}\\p{N}_.-]{1,20}");
