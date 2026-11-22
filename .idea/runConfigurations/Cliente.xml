@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Cliente" type="Application" factoryName="Application" singleton="false">
+    <option name="MAIN_CLASS_NAME" value="minichat.cliente.ClienteChat" />
+    <module name="MiniServidorChat" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
